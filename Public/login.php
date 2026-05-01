@@ -1,5 +1,5 @@
 <?php
-require_once "../components/pdo.php";
+require_once "../Components/pdo.php";
 session_start();
 
 // If already logged in, redirect by role
@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             if ($user['role'] === 'admin') {
-                header('Location: admin_users.php'); exit;
+                header('Location: admin_user.php'); exit;
             } else {
                 header('Location: profile.php'); exit;
             }

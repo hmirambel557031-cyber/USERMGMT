@@ -1,6 +1,6 @@
 <?php
-require_once "../components/auth.php";
-require_once "../components/pdo.php";
+require_once "../Components/auth.php";
+require_once "../Components/pdo.php";
 checkLogin();
 checkAdmin();
 
